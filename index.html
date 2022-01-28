@@ -3,13 +3,97 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="app.js"></script>
     <title></title>
   </head>
   <body>
-    Hello World
+    <div class="topBox">
+      <!-- <img class= "img" id = "imgPl" src="1.jpg" > -->
+      <div id='iconBox'>
+        <div class="iconLinks" id="home" onclick= "changeToHome()">
+
+            <ion-icon class= "icon" name="home"></ion-icon><span>HOME</span>
+          
+        </div>
+        <div class="iconLinks" id="bio" onclick= "changeToBio()">
+          <a href="index1.html">
+            <ion-icon class= "icon" name="id-card"></ion-icon><span>BIO</span>
+          </a>
+        </div>
+        <div class="iconLinks" id="resume" onclick= "changeToResume()">
+          <ion-icon class= "icon" name="document-text"></ion-icon><span>RESUME</span>
+        </div>
+        <div class="iconLinks" id="social" onclick= "changeToSocial()">
+          <ion-icon class= "icon" class= "img" name="desktop"></ion-icon><span>Social</span>
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="carousel">
+      <div class="carouselBox">
+
+        <div id="s1" class="horizontal-card">1
+          <div class="flag"><span>HTML</span></div>
+
+        </div>
+
+        <div id="s2"class="horizontal-card">2
+        <div class="flag"><span>JAVASCRIPT</div>
+
+      </div>
+
+        <div id="s3"class="horizontal-card">3
+        <div class="flag"><span>WEB GAMES</span></div>
+
+      </div>
+
+        <div id="s4"class="horizontal-card">4
+        <div class="flag"><span>TERMINAL GAMES</span></div>
+
+      </div>
+        <div id="s5"class="horizontal-card">5
+        <div class="flag"><span>CSS</span></div>
+
+      </div>
+        <div id="s6"class="horizontal-card">6
+        <div class="flag"><span>CSS</span></div>
+
+      </div>
+        <div id="s7"class="horizontal-card">7
+        <div class="flag"><span>CSS</span></div>
+
+      </div>
+        <div id="s8"class="horizontal-card">8
+        <div class="flag"><span>CSS</span></div>
+
+      </div>
+        <div id="s9"class="horizontal-card">9
+        <div class="flag"><span>CSS</span></div>
+
+      </div>
+
+      </div>
+      <div class = "switchLeft" onclick="sliderScrollLeft()"><</div>
+
+      <div class = "switchRight" onclick="sliderScrollRight()">></div>
+    </div>
+    <footer>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
