@@ -14,32 +14,26 @@
       <div id='iconBox'>
         <div class="iconLinks" id="home" onclick= "changeToHome()">
 
-            <ion-icon class= "icon" name="home"></ion-icon><span>HOME</span>
+            <ion-icon class= "icon" name="home"></ion-icon><span class=" iconText">HOME</span>
 
         </div>
         <div class="iconLinks" id="bio" onclick= "changeToBio()">
-          <a href="index1.html">
-            <ion-icon class= "icon" name="id-card"></ion-icon><span>BIO</span>
+          <a href="bio/index1.html">
+            <ion-icon class= "icon" name="id-card"></ion-icon><span class=" iconText">BIO</span>
           </a>
         </div>
         <div class="iconLinks" id="resume" onclick= "changeToResume()">
-          <ion-icon class= "icon" name="document-text"></ion-icon><span>RESUME</span>
+          <a href="resume/resume.html">
+            <ion-icon class= "icon" name="document-text"></ion-icon><span class=" iconText">RESUME</span>
+          </a>
         </div>
-        <div class="iconLinks" id="social" onclick= "changeToSocial()">
-          <ion-icon class= "icon" class= "img" name="desktop"></ion-icon><span>Social</span>
-
-
-
+        <a href="social/index.html">
+          <div class="iconLinks" id="social" onclick= "changeToSocial()">
+          <ion-icon class= "icon" class= "img" name="desktop"></ion-icon><span class=" iconText">Social</span>
+        </a>
         </div>
-
-
       </div>
-
-
-
     </div>
-
-
 
     <div class="carousel">
       <div class="carouselBox">
@@ -50,15 +44,16 @@
         </div>
 
         <div id="s2"class="horizontal-card">2
-        <div class="flag"><span>JAVASCRIPT</div>
+          <div class="flag"><span>JAVASCRIPT</div>
 
-      </div>
+        </div>
 
-        <div id="s3"class="horizontal-card">3
-        <div class="flag"><span>WEB GAMES</span></div>
+        <a href="spaceGame/index.html">
+          <div id="s3" class="horizontal-card">3
+            <div class="flag"><span>WEB GAMES</span></div>
 
-      </div>
-
+          </div>
+        </a>
         <div id="s4"class="horizontal-card">4
         <div class="flag"><span>TERMINAL GAMES</span></div>
 
@@ -68,32 +63,19 @@
 
       </div>
         <div id="s6"class="horizontal-card">6
-        <div class="flag"><span>CSS</span></div>
-
-      </div>
-        <div id="s7"class="horizontal-card">7
-        <div class="flag"><span>CSS</span></div>
-
-      </div>
-        <div id="s8"class="horizontal-card">8
-        <div class="flag"><span>CSS</span></div>
-
-      </div>
-        <div id="s9"class="horizontal-card">9
-        <div class="flag"><span>CSS</span></div>
+        <div class="flag"><span>GRAPHIC DESIGN</span></div>
 
       </div>
 
-      </div>
-      <div class = "switchLeft" onclick="sliderScrollLeft()"><</div>
 
-      <div class = "switchRight" onclick="sliderScrollRight()">></div>
+      <div class = "switchLeft"  onclick="sliderScrollLeft()"><</div>
+
+      <div class = "switchRight"  onclick="sliderScrollRight()">></div>
     </div>
+  </div>
     <footer>
 
     </footer>
-
-
     <script src="app.js"></script>
   </body>
 </html>
