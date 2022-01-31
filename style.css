@@ -438,21 +438,21 @@ opacity: 1;
   @keyframes horizontalTransform {
     0% {
       /* opacity: 1; */
-      background-image: url('../photos/home.jpg');
+      background-image: url('photos/home.jpg');
       /* transform: translateX(0); */
     }
     33%{
-      background-image: url('../photos/bio.jpg');
+      background-image: url('photos/bio.jpg');
       /* transform: translateX(-325px); */
       /* opacity: .2; */
      }
     66% {
-      background-image: url('../photos/grad.jpg');
+      background-image: url('photos/grad.jpg');
       /* opacity: 1; */
       /* transform: translateX(-650px); */
     }
     100%{
-      background-image: url('../photos/social.jpg');
+      background-image: url('photos/social.jpg');
       /* 100%{transform: translateX(-975px); */
       /* opacity: 1; */
 
