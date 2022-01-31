@@ -1,37 +1,7 @@
 ## Welcome to GitHub Pages
+Our Unit1 project required us t build a profile webpage with 3 or more points of interaction for the user. My web page consist of 4 linked pages. I have a Home, Bio, Resume, Projects, and Social linkpage. The web pages were created using HMTL, CSS, JavaScript and JQuery. Each page have links to all the other pages. The home page features a photo box that when the mouse hovers over a link icon, the photo changes accordingly. The home page features a scrollable section that displays phoject photos, each phot is a link to the project page. The photo labled "web games will take the user to a playable project web game that was developed using HTML/CSS/Javescript.. The next pageis the Bio page that hase a phot box that uses css animation keyframes to cycle photos automatically. This page contains sections that will pop up bigger in the middle of the page when clicked.
+The next page after Bio is the Resume page. This page host a resume structured in table. All table elements where created directly in HTML. The followin page is the Project page. This page just features a photo gallery of code snippits and graphic designs. The page is populated using jquery DOM munipulation. All data comes from arrays. The final page is Social. This page is simple photos with linkss to my profiles at the corresponding webpages.
 
-You can use the [editor on GitHub](https://github.com/RodHouston/ProPoject/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RodHouston/ProPoject/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Technologies used:
+I used for loops, if statements, and JQuery to populate multiple elements with the same parameters. A few pages uses animation key frames. I used function nested inside of for loops to give indexs elements that function with the proper data of that index. That was rather tricky. I use alot of CSS styling. Also, I used media queries for screen size to adjust the pages for mobile. This was rather difficult due to me designing for web first and not thinking mobile first. 
