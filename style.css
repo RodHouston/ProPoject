@@ -3,9 +3,10 @@
   padding: 0;
 
 }
-body{
+ body{
   height: 100vh;
   width: 100%;
+  background-size: cover;
   background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@ body{
   text-align: center;
   margin-top: 1vw;
   background-color: black;
-  background-image: url(photos/1.jpg);
+  background-image: url(photos/home.jpg);
   background-size: 100%;
   background-repeat:no-repeat;
   border: 2px solid white;
@@ -29,14 +30,14 @@ body{
   transition-property: opacity;
   transition-duration: 1s;
 
-  /* transition-delay: 1s */
+   transition-delay: 1s
 }
 
 #iconBox{
   display: flex;
   margin-left: 50px;
   margin-right: 400px;
-  /* background-color: pink; */
+
 
   flex-shrink: 1;
 }
@@ -45,7 +46,7 @@ body{
   width: 60px;
   min-width: 20px;
   min-height: 20px;
-  /* background-color: red; */
+
   margin-top: 1vw;
   margin-left: 3vw;
   flex-shrink: 0;
@@ -62,9 +63,7 @@ body{
 }
 .iconLinks:hover {
   transform: scale(1.4);
-
 }
-
 
 .carousel{
   height: 250px;
@@ -72,8 +71,8 @@ body{
   position: relative;
 }
 
- .switchLeft,
- .switchRight {
+ .leftScroll,
+ .rightScroll {
   color: white;
   font-weight: bold;
   height: 200px;
@@ -91,13 +90,13 @@ body{
   display: inline-block;
 }
 
-.switchLeft{
+.leftScroll{
   position: absolute;
   left: -20px;
   box-shadow: 10px 10px 10px rgb(0, 91, 91);
 }
 
-.switchRight{
+.rightScroll{
   position: absolute;
   right: -20px;
   box-shadow: -10px 10px 10px rgb(0, 91, 91);
@@ -107,7 +106,7 @@ body{
   width: auto;
   overflow: hidden;
   white-space: nowrap;
-  /* display: inline-block; */
+
   text-align: center;
   padding-bottom: 10px ;
   display: flex;
@@ -140,13 +139,13 @@ body{
 }
 #s1{
   margin-left: 0;
-  background-image: url('photos/html.jpg');
+  background-image: url('photos/spaceBattle.png');
 }
 #s2{
   background-image: url('photos/javascript.png');
 }
 #s3{
-  background-image: url('photos/spaceBattle.png');
+  background-image: url('photos/html.jpg');
 }
 #s4{
   background-image: url('photos/terminalGames.png');
@@ -163,8 +162,11 @@ footer{
   position:fixed;
   bottom: 0;
   width: 100%;
-  height:2vw;
+  height:30px;
   background-color: rgb(0, 213, 181);
+  box-shadow:-5px -3px 5px rgb(0, 91, 91);
+  text-align: center;
+  padding:5px;
   z-index: 6;
 }
 .flag{
@@ -175,7 +177,7 @@ footer{
   left: 32.5px;
 	height: 300px;
 	width:235px;
-    /* background-color: blue; */
+
 }
 .flag:hover{
   background-image: url('photos/fla.png');
@@ -203,36 +205,262 @@ a{
 opacity: 1;
     transform: translateX(0px);
   }
- /* 10%{
-   opacity: .2;
- }
-  25% {
-opacity: 1;
-    transform: translateX(0px);
-  } */
-  /* 35%{
-    opacity: .5;
-  }*/
+
   50%{
     opacity: 1;
     transform: translateX(-800px);
-  }/*
-  60%{
-    opacity: .2;
-  }
-  75% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  85%{
-    opacity: .2;
-  } */
-  /* 90% {
-    opacity: 1;
-    transform: translateX(-650px);
-  } */
+  }/
+
   100%{
     transform: translateX(0px);
-    /* opacity: 0; */
+
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+ body{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .topBox{
+    height:300px;
+
+    width: 80%;
+    text-align: center;
+    margin-top: 1vw;
+
+    background-color: black;
+    background-image: url(photos/home.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px rgb(0, 91, 91);
+    opacity: 1
+    transition-property: opacity;
+    transition-duration: 1s;
+
+  }
+
+  #iconBox{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 400px;
+
+    flex-shrink: 1;
+  }
+  .iconLinks{
+    height: 60px;
+    width: 60px;
+    min-width: 20px;
+    min-height: 20px;
+
+    margin-top: 1vw;
+    margin-left: 3vw;
+    flex-shrink: 0;
+    text-align: center;
+    color: rgb(0, 213, 181);
+  }
+  .icon {
+    height: 40px;
+    width: 40px;
+
+    min-width: 20px;
+    min-height: 20px;
+    color: rgb(0, 213, 181);
+  }
+  .iconLinks:hover {
+    transform: scale(1.4);
+  }
+
+  .carousel{
+    height: 250px;
+    width: 55%;
+    position: relative;
+  }
+
+   .leftScroll,
+   .rightScroll {
+    color: white;
+    font-weight: bold;
+    height: 200px;
+    width: 10px;
+    line-height:200px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: rgb(0, 213, 181);
+
+    top:15px;
+
+    z-index: 3;
+    display:none;
+  }
+
+  .leftScroll{
+    position: absolute;
+    left: -20px;
+    box-shadow: 10px 10px 10px rgb(0, 91, 91);
+  }
+
+  .rightScroll{
+    position: absolute;
+    right: -20px;
+    box-shadow: -10px 10px 10px rgb(0, 91, 91);
+  }
+  .carouselBox{
+    height: auto;
+    width: 400px;
+    /* overflow: hidden; */
+    white-space: nowrap;
+
+    text-align: center;
+    padding-bottom: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .horizontal-card{
+    position: relative;
+    width:600px;
+
+    height: 200px;
+
+
+    background-image: linear-gradient(to bottom left, rgb(204, 199, 200),whitesmoke );
+    padding: 5px;
+    margin: 25px 5px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease;
+    z-index= 2;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px rgb(0, 91, 91);
+
+  }
+  .horizontal-card:hover{
+    transform: scale(1);
+    z-index: 2;
+  }
+  #s1{
+    background-size: 400px 200px;
+
+    margin-left: 0;
+    background-image: url('photos/html.jpg');
+  }
+  #s2{
+    background-size: 400px 200px;
+    background-image: url('photos/javascript.png');
+  }
+  #s3{
+    background-size: 400px 200px;
+    background-image: url('photos/spaceBattle.png');
+  }
+  #s4{
+    background-size: 400px 200px;
+    background-image: url('photos/terminalGames.png');
+  }
+  #s5{
+    background-size: 400px 200px;
+    background-image: url('photos/css.png');
+  }
+  #s6{
+    background-size: 400px 200px;
+    margin-right: 0;
+    background-image: url('photos/graphicDesign.JPG');
+  }
+
+  footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height:30px;
+    background-color: rgb(0, 213, 181);
+    box-shadow:-5px -3px 5px rgb(0, 91, 91);
+    text-align: center;
+    padding:5px;
+    z-index: 6;
+  }
+  .flag{
+    background-image: url('photos/fla2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-22px;
+    left: 100px;
+  	height: 300px;
+  	width:235px;
+
+  }
+  .flag:hover{
+    background-image: url('photos/fla.png');
+    color: white;
+  }
+  span{
+    position:relative;
+    top:18px;
+  }
+  .iconText{
+    top:5px;
+  }
+  .iconLinks a{
+    color: rgb(0, 213, 181);
+    text-decoration:none;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+
+  @keyframes horizontalTransform {
+    0% {
+  opacity: 1;
+      transform: translateX(0px);
+    }
+   /* 10%{
+     opacity: .2;
+   }
+    25% {
+  opacity: 1;
+      transform: translateX(0px);
+    } */
+    /* 35%{
+      opacity: .5;
+    }*/
+    50%{
+      opacity: 1;
+      transform: translateX(-800px);
+    }/*
+    60%{
+      opacity: .2;
+    }
+    75% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    85%{
+      opacity: .2;
+    } */
+    /* 90% {
+      opacity: 1;
+      transform: translateX(-650px);
+    } */
+    100%{
+      transform: translateX(0px);
+      /* opacity: 0; */
+    }
   }
 }

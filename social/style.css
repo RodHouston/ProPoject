@@ -44,6 +44,9 @@ a{
   color: black;
   text-decoration:none;
 }
+h3{
+  text-align: center;
+}
 body{
 
   background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
@@ -63,7 +66,6 @@ body{
   width: 75%;
   height:100%;
   overflow-y: scroll;
-
 }
 .sideCards{
   display: flex;
@@ -98,6 +100,7 @@ ion-icon{
 }
 #a1{
   background-image: url(../photos/linkedIn3.jpeg);
+  background-size: 100% 250px;
 }
 #a2{
   background-image: url(../photos/gitHub.jpeg);
@@ -122,5 +125,7 @@ footer{
   height:30px;
   background-color: rgb(0, 213, 181);
   box-shadow:-5px -3px 5px rgb(0, 91, 91);
+  text-align: center;
+  padding:5px;
   z-index: 6;
 }

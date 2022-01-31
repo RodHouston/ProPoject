@@ -1,5 +1,5 @@
 
-const topBoxImgs = ["photos/1.jpg", "photos/2.jpg", "photos/3.jpg", "photos/4.jpg", "photos/5.jpg"]
+const topBoxImgs = ["photos/home.jpg", "photos/bio.jpg", "photos/grad.jpg", "photos/social.jpg", "photos/5.jpg"]
 let $topBox = $('.topBox')
 
 $('#home').hover(function(){
@@ -43,7 +43,8 @@ const sliders = document.querySelector('.carouselBox')
 
 let scrollAmount = 0;
 let scrollPerClick = 650;
-function sliderScrollLeft(){
+
+function scrollL(){
   console.log('clicked left');
   console.log(` scroll befor ${scrollAmount}`);
   if(scrollAmount<=0){
@@ -64,7 +65,7 @@ function sliderScrollLeft(){
   }
 }
 
-function sliderScrollRight(){
+function scrollR(){
   console.log('clicked right');
   console.log( sliders.scrollWidth);
   if(scrollAmount< sliders.scrollWidth- 1000 ){
