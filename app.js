@@ -36,10 +36,12 @@ $('#social').hover(function(){
 // $topBox.css('background-image', `url(${topBoxImgs[3]})`)
 // }
 
+let $switch = $('.carouselBox').children().last().remove()
+$switch.prependTo('.carouselBox')
+
 
 
 const sliders = document.querySelector('.carouselBox')
-
 
 let scrollAmount = 0;
 let scrollPerClick = 650;
@@ -49,6 +51,10 @@ function scrollL(){
   console.log(` scroll befor ${scrollAmount}`);
   if(scrollAmount<=0){
     scrollAmount=2790;
+
+    // let $switch = $('.carouselBox').children().last().remove()
+    // $switch.prependTo('.carouselBox')
+
     sliders.scrollTo({
       top:0,
       left: (scrollAmount -= scrollPerClick),
@@ -68,7 +74,7 @@ function scrollL(){
 function scrollR(){
   console.log('clicked right');
   console.log( sliders.scrollWidth);
-  if(scrollAmount< sliders.scrollWidth- 1000 ){
+  if(scrollAmount< sliders.scrollWidth- 600 ){
 
     sliders.scrollTo({
       top:0,
@@ -78,6 +84,10 @@ function scrollR(){
   }else{
     console.log('you are at the end');
     scrollAmount=0
+
+    // let $switch = $('.carouselBox').children().first().remove()
+    // $switch.appendTo('.carouselBox')
+
     sliders.scrollTo({
       top:0,
       left: (0),
@@ -87,16 +97,10 @@ function scrollR(){
 }
 
 
-
-
-
-
 $(() => {
   // let $switch = $('.carouselBox').children().last().remove()
   // $switch.prependTo('.carouselBox')
-  //
-// let $topBox = $('.topBox')
-// $topBox.css('background-image', `url(${topBoxImgs[4]})`)
+
 
 
 })

@@ -25,20 +25,14 @@
   background-repeat:no-repeat;
   border: 2px solid white;
   box-shadow: 10px 10px 10px rgb(0, 91, 91);
-
   opacity: 1
   transition-property: opacity;
   transition-duration: 1s;
-
-   transition-delay: 1s
 }
-
 #iconBox{
   display: flex;
   margin-left: 50px;
   margin-right: 400px;
-
-
   flex-shrink: 1;
 }
 .iconLinks{
@@ -46,7 +40,6 @@
   width: 60px;
   min-width: 20px;
   min-height: 20px;
-
   margin-top: 1vw;
   margin-left: 3vw;
   flex-shrink: 0;
@@ -56,7 +49,6 @@
 .icon {
   height: 40px;
   width: 40px;
-
   min-width: 20px;
   min-height: 20px;
   color: rgb(0, 213, 181);
@@ -64,13 +56,20 @@
 .iconLinks:hover {
   transform: scale(1.4);
 }
+#proTitle{
+  font-family: 'Cinzel', serif;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
 
 .carousel{
   height: 250px;
   width: 55%;
   position: relative;
+  margin-bottom: 60px;
 }
-
  .leftScroll,
  .rightScroll {
   color: white;
@@ -83,13 +82,10 @@
   align-items: center;
   border: 2px solid white;
   background-color: rgb(0, 213, 181);
-
   top:15px;
-
   z-index: 3;
   display: inline-block;
 }
-
 .leftScroll{
   position: absolute;
   left: -20px;
@@ -106,13 +102,10 @@
   width: auto;
   overflow: hidden;
   white-space: nowrap;
-
   text-align: center;
   padding-bottom: 10px ;
   display: flex;
   align-items: center;
-
-
 }
 
 .horizontal-card{
@@ -121,7 +114,6 @@
   max-width: 300px;
   height: 150px;
   background-size: cover;
-
   background-image: linear-gradient(to bottom left, rgb(204, 199, 200),whitesmoke );
   padding :5px;
   margin: 5px 5px;
@@ -155,8 +147,10 @@
 }
 #s6{
   margin-right: 0;
-  background-image: url('photos/graphicDesign.JPG');
-}
+  background-image: url('photos/graphicDesign.JPG');}
+#s7{
+  margin-right: 0;
+  background-image: url('photos/flowerBox.png');}
 
 footer{
   position:fixed;
@@ -200,22 +194,6 @@ a{
 }
 
 
-@keyframes horizontalTransform {
-  0% {
-opacity: 1;
-    transform: translateX(0px);
-  }
-
-  50%{
-    opacity: 1;
-    transform: translateX(-800px);
-  }/
-
-  100%{
-    transform: translateX(0px);
-
-  }
-}
 
 
 
