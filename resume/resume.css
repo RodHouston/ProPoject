@@ -276,8 +276,8 @@ a{
 
   #main{
 
-  margin: 50px auto;
-    width:  80%;
+  margin: auto;
+    width:  95%;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
@@ -310,7 +310,7 @@ a{
     line-height: 1.2;
     /* display: flex; */
 
-    width: 100%;
+    /* width: 100%; */
 
   }
   td ul{
