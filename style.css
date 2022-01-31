@@ -224,11 +224,13 @@ opacity: 1;
     height: 100%;
     width: 100%;
     background-size: cover;
+
     background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
   }
   .topBox{
     height:300px;
@@ -252,8 +254,9 @@ opacity: 1;
 
   #iconBox{
     display: flex;
-    margin-left: 50px;
-    margin-right: 400px;
+    margin: auto;
+    margin-top: 10px;
+
 
     flex-shrink: 1;
   }
@@ -263,8 +266,7 @@ opacity: 1;
     min-width: 20px;
     min-height: 20px;
 
-    margin-top: 1vw;
-    margin-left: 3vw;
+    margin: auto;
     flex-shrink: 0;
     text-align: center;
     color: rgb(0, 213, 181);
@@ -283,8 +285,11 @@ opacity: 1;
 
   .carousel{
     height: 250px;
-    width: 55%;
-    position: relative;
+   width:95%;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+    display:flex;
   }
 
    .leftScroll,
@@ -317,9 +322,10 @@ opacity: 1;
     right: -20px;
     box-shadow: -10px 10px 10px rgb(0, 91, 91);
   }
+
   .carouselBox{
     height: auto;
-    width: 400px;
+    width: 100%;
     /* overflow: hidden; */
     white-space: nowrap;
 
@@ -329,13 +335,14 @@ opacity: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
 
 
   }
 
   .horizontal-card{
     position: relative;
-    width:600px;
+    width:100%;
 
     height: 200px;
 
@@ -356,7 +363,7 @@ opacity: 1;
     z-index: 2;
   }
   #s1{
-    background-size: 400px 200px;
+    background-size: 100% 200px;
 
     margin-left: 0;
     background-image: url('photos/html.jpg');
@@ -399,9 +406,9 @@ opacity: 1;
     background-repeat: no-repeat;
     position: absolute;
     top:-22px;
-    left: 100px;
-  	height: 300px;
-  	width:235px;
+    left: 45px;
+  	height: 70px;
+  	width:80%;
 
   }
   .flag:hover{

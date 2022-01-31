@@ -150,3 +150,195 @@ a{
   text-decoration: none;
   color: black;
 }
+
+#iconBox{
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+
+    #iconBox{
+      display: flex;
+      margin: auto;
+      margin-top: 10px;
+
+
+      flex-shrink: 1;
+    }
+    .iconLinks{
+      height: 60px;
+      width: 60px;
+      min-width: 20px;
+      min-height: 20px;
+
+      margin: auto 10px;
+      flex-shrink: 0;
+      text-align: center;
+      color: rgb(0, 213, 181);
+    }
+    .icon {
+      height: 40px;
+      width: 40px;
+
+      min-width: 20px;
+      min-height: 20px;
+      color: rgb(0, 213, 181);
+    }
+    .iconLinks:hover {
+      transform: scale(1.4);
+    }
+  h1{
+    color: white;
+  }
+  html, body{
+
+    width:100%;
+    align-items: center;
+    justify-content: center;
+
+  }
+  body{
+
+    width: 100%;
+    background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+  #headerNav{
+    width:100%;
+    position:fixed;
+    height: 40px;
+    min-height: 35px;
+    background-color: rgb(0, 213, 181);
+    box-shadow:5px 3px 5px rgb(0, 91, 91);
+    top: 0;
+    z-index:6;
+    display: none;
+  }
+  #headerUl {
+
+    text-align: center;
+    margin-top: 8px;
+  }
+  #headerUl li{
+    display:inline-flex;
+    font-size: 18px;
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid grey;
+    list-style: none;
+  }
+  #lastNav{
+    border-right: 2px solid grey;
+  }
+  #headerUl li:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 91, 91);
+    color: white;
+    padding: auto;
+  }
+   #titleBox{
+     /* display: flex;
+     flex-direction: row; */
+     width: 100%;
+     height: 150px;
+     display: inline-flex;
+     background-color: grey;
+   }
+   #name{
+     width: 100%;
+     margin: auto 10px;
+   }
+   #contactInfo{
+     width: 60%;
+     list-style: none;
+     text-align: right;
+     margin: auto 10px;
+   }
+   h3{
+     font-size: 15px
+   }
+   #contactInfo li{
+     margin: 10px 0;
+   }
+   .bold{
+     font-weight: bold;
+   }
+  #bulletPoints{
+    width: 75%;
+    margin: 0 auto;
+
+  }
+
+  #main{
+
+  margin: 50px auto;
+    width:  80%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
+
+
+    box-shadow:-10px 10px 10px rgb(0, 91, 91), 10px 10px 10px rgb(0, 91, 91);
+
+
+  }
+
+  table, th, td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 213, 181);
+  }
+  table{
+    width:80%;
+    margin: 10px auto;
+  }
+  .tableTop{
+    width:100%;
+    background-color: red;
+  }
+  th{
+    vertical-align: top;
+    text-align: left;
+  }
+  td{
+    padding: 5px;
+    line-height: 1.2;
+    /* display: flex; */
+
+    width: 100%;
+
+  }
+  td ul{
+    columns: 2;
+    margin: 0 20px;
+
+  }
+  td li{
+
+    list-style: circle;
+  }
+  footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height:30px;
+    background-color: rgb(0, 213, 181);
+    box-shadow:-5px -3px 5px rgb(0, 91, 91);
+    text-align: center;
+    padding:5px;
+    z-index: 6;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+
+}
