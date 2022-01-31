@@ -248,7 +248,7 @@ opacity: 1;
     box-shadow: 10px 10px 10px rgb(0, 91, 91);
     opacity: 1
     animation-play-state: running;
-    animation: horizontalTransform 30s ease-in-out;
+    animation: horizontalTransform 20s ease-in-out;
     animation-iteration-count:infinite;
     transition-property: opacity;
     transition-duration: 1s;

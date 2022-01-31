@@ -3,7 +3,7 @@
 }
 header{
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 60px;
   background-color: rgb(22, 0, 29);
@@ -44,14 +44,21 @@ a{
 }
 
 body{
-  height: 80%;
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(to bottom right, rgb(22, 0, 29), rgb(180, 60, 255));
+ /* align-items: center;
+ justify-content: center; */
 }
 .container{
-  margin-top: 100px;
+  /* margin-top:200px; */
   display: flex;
-  width: 400px;
-  height: 75%;
+  width: 75%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  margin: auto;
 }
 
 
@@ -63,14 +70,15 @@ body{
   width:150px;
   height:400px;
   margin:10px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  margin-right: 50px;
   color: rgb(246, 0, 214);
   background-color: rgba(22, 0, 29, .8);
   box-shadow: -10px 10px 5px rgb(22, 0, 29);
 }
 #score2{
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   position:relative;
   width:150px;
   height:400px;
@@ -129,11 +137,13 @@ flex-wrap: wrap;
 #main{
   position: relative;
   width:800px;
-  height: 75%;
-  margin-left: 40px;
+  height: 500px;
+  /* margin-left: 40px; */
+  margin:  auto;
+  margin-top: 20px;
   background-color: purple;
   background-image: url(gal.jpeg);
-  background-size: 800px 800px;
+  /* background-size: 800px 800px; */
   /* opacity: 0; */
   background-repeat: no-repeat;
   box-shadow: 0px 10px 5px rgb(22, 0, 29);
@@ -171,11 +181,11 @@ text-align: center;
 
  #shipDiv{
    width: 800px;
-   height: 800px;
+   height: 500px;
    /* display: block; */
  }
  .baseShip{
-   di
+
    position: relative;
    /* left: 0;
    right: 0; */
@@ -189,9 +199,10 @@ text-align: center;
  .img {
    width: 100px;
    height: 100px;
-   top: 350px;
+   top: 200px;
 
    position:relative;
+   margin: auto;
  }
  #imgPl{
   /* top: 450px; */
@@ -240,7 +251,7 @@ text-align: center;
  }
  #buttons{
    display: flex;
-   flex-direction: column;
+   flex-direction:row;
 
    justify-content: center;
    width: 100%;
@@ -279,6 +290,7 @@ text-align: center;
  }
 
  footer{
+
    text-align: center;
    background-color: rgb(22, 0, 29);
    color: white;
@@ -294,30 +306,330 @@ text-align: center;
  }
 
  @keyframes attack {
-   0%   { left:0px; top:350px;}
+   0%   { left:0px; top:200px;}
    25%  { left:150px; top:100px;}
    50%  { left:150px; top:100px;}
    75%  { left:150px; top:100px;}
-   100% { left:0px; top:350px;}
+   100% { left:0px; top:200px;}
 }
 @keyframes repair {
-  0%   { left:0px; top:350px;}
-  25%  { left:150px; top:600px;}
-  50%  { left:150px; top:600px;}
-  75%  { left:150px; top:600px;}
-  100% { left:0px; top:350px;}
+  0%   { left:0px; top:200px;}
+  25%  { left:150px; top:300px;}
+  50%  { left:150px; top:300px;}
+  75%  { left:150px; top:300px;}
+  100% { left:0px; top:200px;}
 }
 @keyframes repairCPU {
-  0%   { left:595px; top:350px;}
+  0%   { left:595px; top:200px;}
   25%  { left:450px; top:100px;}
   50%  { left:450px; top:100px;}
   75%  { left:450px; top:100px;}
-  100% { left:595px; top:350px;}
+  100% { left:595px; top:200px;}
 }
 @keyframes attackCPU {
-  0%   { left:595px; top:350px;}
-  25%  { left:450px; top:600px;}
-  50%  { left:450px; top:600px;}
-  75%  { left:450px; top:600px;}
-  100% { left:595px; top:350px;}
+  0%   { left:595px; top:200px;}
+  25%  { left:450px; top:300px;}
+  50%  { left:450px; top:300px;}
+  75%  { left:450px; top:300px;}
+  100% { left:595px; top:200px;}
+}
+
+
+
+@media only screen and (max-width: 576px),
+ screen and (max-height: 500px)
+   {
+body{
+  background-color: red;
+}
+    .container{
+      /* margin-top:200px; */
+      display: flex;
+      width: 75%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      margin: auto;
+    }
+
+
+
+    #score{
+      display: flex;
+      flex-wrap: wrap;
+      position:relative;
+      width:150px;
+      height:400px;
+      margin:10px;
+      /* margin-left: 50px; */
+      margin-right: 50px;
+      /* color: rgb(246, 0, 214); */
+
+      background-color: rgba(22, 0, 29, .8);
+      box-shadow: -10px 10px 5px rgb(22, 0, 29);
+    }
+    #score2{
+      display: flex;
+      flex-wrap: wrap;
+      position:relative;
+      width:150px;
+      height:400px;
+      margin:10px;
+      margin-left: 50px;
+      color: rgb(246, 0, 214);
+      background-color: rgba(22, 0, 29, .8);
+      box-shadow: 10px 10px 5px rgb(22, 0, 29);
+    }
+    #pScore{
+      margin: 0 auto;
+    }
+    .scoreTitle{
+      height: 20px;
+      margin: 0 auto;
+    }
+    .attShip{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-image: url(pl.png);
+      background-size: 40px 40px;
+      background-color: rgb(144, 6, 31);
+      background-repeat: no-repeat;
+    }
+    .repShip{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-image: url(pl.png);
+      background-size: 40px 40px;
+      background-color: rgb(23, 128, 2);
+      background-repeat: no-repeat;
+    }
+    .enAttShip{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-image: url(en.png);
+      background-size: 40px 40px;
+      background-color: rgb(144, 6, 31);
+      background-repeat: no-repeat;
+    }
+    .enRepShip{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-image: url(en.png);
+      background-size: 40px 40px;
+      background-color: rgb(23, 128, 2);
+      background-repeat: no-repeat;
+    }
+
+
+
+    #main{
+      position: relative;
+      width:800px;
+      height: 500px;
+      /* margin-left: 40px; */
+      margin:  auto;
+      margin-top: 20px;
+      background-color: purple;
+      background-image: url(gal.jpeg);
+      /* background-size: 800px 800px; */
+      /* opacity: 0; */
+      background-repeat: no-repeat;
+      box-shadow: 0px 10px 5px rgb(22, 0, 29);
+    }
+    h1{
+      text-align: center;
+      font-size: 10%;
+    }
+    h2{
+    text-align: center;
+      text-decoration: underline;
+    }
+    #playerDiv{
+      /* display: flex; */
+      /* position: relative; */
+      width:50px;
+      height: 50px;
+
+      background-color: ;
+    }
+    #cpuDiv{
+      /* display: flex; */
+      /* position: absolute; */
+      width:50px;
+      height: 50px;
+      /* float: right;
+      margin-left: 725px; */
+      background-color: green;
+    }
+
+     .box{
+       /* margin-top: 375px; */
+     }
+
+
+
+     #shipDiv{
+       width: 800px;
+       height: 500px;
+       /* display: block; */
+     }
+     .baseShip{
+
+       position: relative;
+       /* left: 0;
+       right: 0; */
+       width: 200px;
+       height: 200px;
+       /* margin-left: auto;
+       margin-right: auto; */
+
+
+     }
+     .img {
+       width: 100px;
+       height: 100px;
+       top: 200px;
+
+       position:relative;
+       margin: auto;
+     }
+     #imgPl{
+      /* top: 450px; */
+      transform: rotate(90deg);
+      animation-name: ;
+      animation-duration: 2s;
+      animation-iteration-count:1;
+     }
+     #imgCPU{
+
+       left: 595px;
+       transform: rotate(270deg);
+       animation-name:  ;
+       animation-duration: 2s;
+       animation-iteration-count:1;
+
+     }
+     #cpuBS{
+       position: absolute;
+       margin:  auto;
+       left:0;
+       right: 0;
+       top:0;
+       /* background-color: orange; */
+       background-image: url(enMom.png);
+       background-size: 200px 200px;
+       background-repeat: no-repeat;
+       /* transform: rotate(90deg); */
+       border-radius: 40px;
+     }
+      #plyrBS{
+        position: absolute;
+        margin:  auto;
+        bottom: 0;
+        left:0;
+        right: 0;
+        /* margin-top: 200px; */
+       /* background-color: blue; */
+       background-image: url(playerMom.png);
+       background-size: 200px 200px;
+       background-repeat: no-repeat;
+       /* transform: rotate(90deg); */
+       border-radius: 40px;
+
+
+     }
+     #buttons{
+       display: flex;
+       flex-direction:row;
+
+       justify-content: center;
+       width: 100%;
+       margin-left: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     .but{
+       width: 150px;
+       height: 50px;
+       margin: 10px;
+
+     }
+     #but1{
+       border-radius: 10px;
+       background-color: red;
+       box-shadow: -10px 10px 5px rgb(22, 0, 29);
+     }
+     #but2{
+
+       border-radius: 10px;
+       border:5px solid red;
+       background-color: white;
+       box-shadow: -10px 10px 5px rgb(22, 0, 29);
+     }
+     #but3{
+       border-radius: 10px;
+       border: 5px solid green;
+       background-color: white;
+       box-shadow: 10px 10px 5px rgb(22, 0, 29);
+     }
+     #but4{
+       border-radius: 10px;
+       background-color: green;
+       box-shadow: 10px 10px 5px rgb(22, 0, 29);
+     }
+
+     footer{
+
+       text-align: center;
+       background-color: rgb(22, 0, 29);
+       color: white;
+       width: 100%;
+       height: 40px;
+       margin-top: 10px;
+     }
+     footer p{
+       color: rgb(249, 6, 246);
+       padding: 10px;
+       margin-bottom: 0;
+       margin-top: 10px;
+     }
+
+     @keyframes attack {
+       0%   { left:0px; top:200px;}
+       25%  { left:150px; top:100px;}
+       50%  { left:150px; top:100px;}
+       75%  { left:150px; top:100px;}
+       100% { left:0px; top:200px;}
+    }
+    @keyframes repair {
+      0%   { left:0px; top:200px;}
+      25%  { left:150px; top:300px;}
+      50%  { left:150px; top:300px;}
+      75%  { left:150px; top:300px;}
+      100% { left:0px; top:200px;}
+    }
+    @keyframes repairCPU {
+      0%   { left:595px; top:200px;}
+      25%  { left:450px; top:100px;}
+      50%  { left:450px; top:100px;}
+      75%  { left:450px; top:100px;}
+      100% { left:595px; top:200px;}
+    }
+    @keyframes attackCPU {
+      0%   { left:595px; top:200px;}
+      25%  { left:450px; top:300px;}
+      50%  { left:450px; top:300px;}
+      75%  { left:450px; top:300px;}
+      100% { left:595px; top:200px;}
+    }
+
+
+
+
+
 }
