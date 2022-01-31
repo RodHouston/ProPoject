@@ -247,6 +247,9 @@ opacity: 1;
     border: 2px solid white;
     box-shadow: 10px 10px 10px rgb(0, 91, 91);
     opacity: 1
+    animation-play-state: running;
+    animation: horizontalTransform 30s ease-in-out;
+    animation-iteration-count:infinite;
     transition-property: opacity;
     transition-duration: 1s;
 
@@ -366,7 +369,7 @@ opacity: 1;
     background-size: 100% 200px;
 
     margin-left: 0;
-    background-image: url('photos/html.jpg');
+    background-image: url('photos/spaceBattle.png');
   }
   #s2{
     background-size: 400px 200px;
@@ -374,7 +377,7 @@ opacity: 1;
   }
   #s3{
     background-size: 400px 200px;
-    background-image: url('photos/spaceBattle.png');
+    background-image: url('photos/html.jpg');
   }
   #s4{
     background-size: 400px 200px;
@@ -434,40 +437,24 @@ opacity: 1;
 
   @keyframes horizontalTransform {
     0% {
-  opacity: 1;
-      transform: translateX(0px);
+      /* opacity: 1; */
+      background-image: url(../photos/home.jpg);
+      /* transform: translateX(0); */
     }
-   /* 10%{
-     opacity: .2;
-   }
-    25% {
-  opacity: 1;
-      transform: translateX(0px);
-    } */
-    /* 35%{
-      opacity: .5;
-    }*/
-    50%{
-      opacity: 1;
-      transform: translateX(-800px);
-    }/*
-    60%{
-      opacity: .2;
+    33%{
+      background-image: url(../photos/bio.jpg);
+      /* transform: translateX(-325px); */
+      /* opacity: .2; */
+     }
+    66% {
+      background-image: url(../photos/grad.jpg);
+      /* opacity: 1; */
+      /* transform: translateX(-650px); */
     }
-    75% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    85%{
-      opacity: .2;
-    } */
-    /* 90% {
-      opacity: 1;
-      transform: translateX(-650px);
-    } */
     100%{
-      transform: translateX(0px);
-      /* opacity: 0; */
+      background-image: url(../photos/social.jpg);
+      /* 100%{transform: translateX(-975px); */
+      /* opacity: 1; */
+
     }
-  }
-}
+     }}

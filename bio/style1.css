@@ -3,6 +3,9 @@
   margin:0;
   padding: 0;
 }
+body{
+  background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
+}
 #iconBox{
   display: none;
 }
@@ -300,11 +303,12 @@ s1{
       align-items: center;
       padding-top: 20px;
       flex-direction: column;
+
     }
     #topBox{
       display: flex;
       flex-direction:column;
-      width: 400px;
+      width: 90%;
       height: 425px;
       text-align: left;
       background-color: rgb(0, 213, 181);
@@ -342,9 +346,11 @@ s1{
       display: flex;
       flex-direction: column;
       margin: 40px auto;
-      width: 600px;
+      width: 90%;
       height: 700px;
       overflow-y : scroll;
+      justify-content: center;
+      align-items: center;
       box-shadow:-5px 3px 5px rgb(0, 91, 91);
       /* background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke ); */
     }
@@ -360,7 +366,7 @@ s1{
 
     .articles{
       font-size: 20px;
-      width: 100%;
+      width: 90%;
       height:250px;
       margin: auto 60px;
       padding: 10px;
