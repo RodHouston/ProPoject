@@ -34,12 +34,13 @@ for (let i = 0; i < photos.length; i++) {
     $divBox.css('transition', 'all .1s ease-in-out')
   }
   const flipOut = () => {
-    $divBox.css('transform', 'rotate(360deg)')
+    $divBox.css('transform', 'rotate(360deg) perspective(600px) rotateX(45deg)')
     $divBox.css('transition', 'all 1s ease-in-out')
   }
   $divBox.appendTo('#main').addClass('contentBoxes')
   .css('background-image',`url(${photos[i]})`).click(zoomBig).mouseover(testFlip).mouseleave(flipOut)
   }
+
   // closes a modal
   const exitZoom =() => {
     zoom.style.display = ''

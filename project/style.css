@@ -52,7 +52,6 @@ a{
   text-decoration:none;
 }
 body{
-
   background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
 }
 #main{
@@ -73,12 +72,11 @@ body{
   background-color: grey;
   text-align:center;
   box-shadow: 5px 3px 5px rgb(0, 91, 91);
-
 }
 .contentBoxes{
   width: 225px;
   height: 225px;
-  margin: 10px;
+  margin: 25px;
   background-color: white;
   opacity: .8;
   overflow: hidden;
@@ -88,6 +86,7 @@ body{
   background-repeat: no-repeat;
   transition: all .01s ease-in-out;
   box-shadow: 10px 10px 10px rgb(0, 91, 91);
+  transform: perspective(600px) rotateX(45deg);
 }
 .contentBoxes:hover{
   z-index: 2;
@@ -104,7 +103,6 @@ footer{
   padding:5px;
   z-index: 6;
 }
-
 #zoomBox {
   display: none;
   position: fixed;

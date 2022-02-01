@@ -39,8 +39,6 @@ $('#social').hover(function(){
 let $switch = $('.carouselBox').children().last().remove()
 $switch.prependTo('.carouselBox')
 
-
-
 const sliders = document.querySelector('.carouselBox')
 
 let scrollAmount = 0;
