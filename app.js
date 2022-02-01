@@ -11,18 +11,18 @@ $('#home').hover(function(){
 $('#bio').hover(function(){
   $($topBox).css("background-image", `url(${topBoxImgs[1]})`);
   }, function(){
-  $($topBox).css("background-image", `url(${topBoxImgs[1]})`);
+  $($topBox).css("background-image", `url(${topBoxImgs[0]})`);
 });
 
 $('#resume').hover(function(){
   $($topBox).css("background-image", `url(${topBoxImgs[2]})`);
   }, function(){
-  $($topBox).css("background-image", `url(${topBoxImgs[2]})`);
+  $($topBox).css("background-image", `url(${topBoxImgs[0]})`);
 });
 $('#social').hover(function(){
   $($topBox).css("background-image", `url(${topBoxImgs[3]})`);
   }, function(){
-  $($topBox).css("background-image", `url(${topBoxImgs[3]})`);
+  $($topBox).css("background-image", `url(${topBoxImgs[0]})`);
 });
 // const changeToBio = () => {
 // $topBox.css('background-image', `url(${topBoxImgs[1]})`)
