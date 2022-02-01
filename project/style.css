@@ -9,6 +9,13 @@ html, body {
   height:100%;
   /* overflow: hidden; */
 }
+#iconbox{
+  display: none;
+}
+.iconLinks{
+  display: none;
+}
+
 #headerNav{
   width:100%;
   position:fixed;
@@ -149,3 +156,39 @@ footer{
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
+
+
+@media only screen and (max-width: 576px) {
+    #iconBox{
+      display: flex;
+      margin: auto;
+      margin-top: 10px;
+
+      flex-shrink: 1;
+    }
+    .iconLinks{
+      height: 60px;
+      width: 60px;
+      min-width: 20px;
+      min-height: 20px;
+      display: block;
+      margin: auto;
+      flex-shrink: 0;
+      text-align: center;
+      color: rgb(0, 213, 181);
+    }
+    .icon {
+      height: 40px;
+      width: 40px;
+
+      min-width: 20px;
+      min-height: 20px;
+      color: rgb(0, 213, 181);
+    }
+    .iconLinks:hover {
+      transform: scale(1.4);
+    }
+    #headerNav{
+      display: none;
+    }
+  }

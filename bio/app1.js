@@ -27,7 +27,7 @@ const about = [" Roderick Houston is a current student in General Assembly's Sof
       $divExit.click(exitZoom).text('x').appendTo('#zoomBox')
       sideCard.clone().appendTo('#zoomBox')
       zoom.style.display = 'block'
-      zoom.style.zIndex = "5"
+      zoom.style.zIndex = "5"      
     }
     //used to give html creates buttons the function
     let li = document.getElementById(`li${i}`)
