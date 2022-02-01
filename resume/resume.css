@@ -3,19 +3,15 @@
   padding: 0;
   margin:0;
 }
-
 h1{
   color: white;
 }
 html, body{
-
   width:100%;
   align-items: center;
   justify-content: center;
-
 }
 body{
-
   width: 100%;
   background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
   display: flex;
@@ -35,7 +31,6 @@ body{
   z-index:6;
 }
 #headerUl {
-
   text-align: center;
   margin-top: 8px;
 }
@@ -57,50 +52,41 @@ body{
   color: white;
   padding: auto;
 }
- #titleBox{
-   /* display: flex;
-   flex-direction: row; */
+#titleBox{
    width: 100%;
    height: 150px;
    display: inline-flex;
    background-color: grey;
- }
- #name{
-   width: 500px;
-   margin: auto 10px;
- }
- #contactInfo{
-   width: 100%;
-   list-style: none;
-   text-align: right;
-   margin: auto 10px;
- }
- #contactInfo li{
-   margin: 10px 0;
- }
- .bold{
-   font-weight: bold;
- }
+}
+#name{
+  width: 500px;
+  margin: auto 10px;
+}
+#contactInfo{
+  width: 100%;
+  list-style: none;
+  text-align: right;
+  margin: auto 10px;
+}
+#contactInfo li{
+  margin: 10px 0;
+}
+.bold{
+  font-weight: bold;
+}
 #bulletPoints{
   width: 75%;
   margin: 0 auto;
-
 }
 
 #main{
-
-margin: 50px auto;
+  margin: 50px auto;
   width:  80%;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
-
-
   box-shadow:-10px 10px 10px rgb(0, 91, 91), 10px 10px 10px rgb(0, 91, 91);
-
-
 }
-
 table, th, td{
   border-style: solid;
   border-width: 1px;
@@ -121,18 +107,13 @@ th{
 td{
   padding: 5px;
   line-height: 1.2;
-  /* display: flex; */
-
   width: 100%;
-
 }
 td ul{
   columns: 3;
   margin: 0 20px;
-
 }
 td li{
-
   list-style: circle;
 }
 footer{
@@ -150,10 +131,10 @@ a{
   text-decoration: none;
   color: black;
 }
-
 #iconBox{
   display: none;
 }
+
 
 @media only screen and (max-width: 576px) {
 
@@ -161,8 +142,6 @@ a{
       display: flex;
       margin: auto;
       margin-top: 10px;
-
-
       flex-shrink: 1;
     }
     .iconLinks{
@@ -170,7 +149,6 @@ a{
       width: 60px;
       min-width: 20px;
       min-height: 20px;
-
       margin: auto 10px;
       flex-shrink: 0;
       text-align: center;

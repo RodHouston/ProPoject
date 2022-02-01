@@ -441,51 +441,9 @@ s1{
       border-radius: 25px;
       background-color: red;
       cursor: pointer;
-      opacity: .5
+      opacity: .5;
     }
     #exit:hover{
       transform: scale(1.2);
       opacity: 1;
     }
-
-
-    @keyframes zoom {
-      from {transform:scale(0)}
-      to {transform:scale(1)}
-    }
-
-    s1{
-      background-image: url('../photos/me7.jpeg');
-      background-size: 300px 300px;
-      background-repeat: no-repeat;
-    }
-    @keyframes horizontalTransform {
-      0% {
-        /* opacity: 1; */
-        background-image: url(../photos/me7.jpeg);
-        /* transform: translateX(0); */
-      }
-      25%{
-        background-image: url(../photos/me2.jpeg);
-        /* transform: translateX(-325px); */
-        /* opacity: .2; */
-       }
-      50% {
-        background-image: url(../photos/fam.jpeg);
-        /* opacity: 1; */
-        /* transform: translateX(-650px); */
-      }
-      75%{
-        background-image: url(../photos/me5.jpeg);
-        /* 100%{transform: translateX(-975px); */
-        /* opacity: 1; */
-
-      }
-       100%{
-         background-image: url(../photos/me.jpeg);
-         /*transform: translateX(-1200px); */
-        /* opacity: .2; */
-      }}
-
-
-   }

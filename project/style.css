@@ -77,16 +77,13 @@ body{
   overflow: hidden;
   background-size: 225px 225px;
   background-repeat: no-repeat;
-  transition: all .3s ease-in-out;
+  transition: all .01s ease-in-out;
   box-shadow: 5px 3px 5px rgb(0, 91, 91);
 }
 .contentBoxes:hover{
-  transform: scale(1.1);
   z-index: 2;
   opacity: 1;
-  /* background-size: 100% 100%; */
 }
-
 footer{
   position:fixed;
   bottom: 0;
@@ -99,39 +96,32 @@ footer{
   z-index: 6;
 }
 
-
-
-
-
-
 #zoomBox {
   display: none;
   position: fixed;
   z-index: 1;
   width: 600px;
   height: 600px;
+  border: 5px solid  rgb(0, 213, 181);
+  border-radius: 10px;
   background-size: 600px 600px;
   background-repeat: no-repeat;
-
   animation-name: zoom;
   animation-duration: 0.6s;
   background-color: rgba(0,0,0,0.9);
 }
 #captionBox{
   position: relative;
-  width: 500px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   margin:auto;
-  margin-top: 575px;
+  /* margin-top: 575px; */
+  margin-left: 600px;
   padding: 10px;
   font-size: 20px;
   text-align: center;
   border: 4px solid rgb(0, 213, 181);
   border-radius: 10px;
-
-
-  /* left 20px;
-  top 600px; */
   background-image: linear-gradient(to bottom left, rgb(158, 158, 158),whitesmoke );
 }
 #exit{
