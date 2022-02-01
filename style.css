@@ -147,10 +147,14 @@
 }
 #s6{
   margin-right: 0;
-  background-image: url('photos/graphicDesign.JPG');}
+  background-image: url('photos/graphicDesign.JPG');
+}
 #s7{
-  margin-right: 0;
-  background-image: url('photos/flowerBox.png');}
+  background-image: url('photos/flowerBox.png');
+}
+#s8{
+  background-image: url('photos/lawnMaster.png');
+}
 
 footer{
   position:fixed;

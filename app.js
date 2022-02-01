@@ -74,7 +74,7 @@ function scrollL(){
 function scrollR(){
   console.log('clicked right');
   console.log( sliders.scrollWidth);
-  if(scrollAmount< sliders.scrollWidth- 600 ){
+  if(scrollAmount< sliders.scrollWidth- 1000 ){
 
     sliders.scrollTo({
       top:0,
