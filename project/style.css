@@ -75,10 +75,12 @@ body{
   background-color: white;
   opacity: .8;
   overflow: hidden;
+  border: 5px solid rgb(0, 213, 181);
+  border-radius: 10px;
   background-size: 225px 225px;
   background-repeat: no-repeat;
   transition: all .01s ease-in-out;
-  box-shadow: 5px 3px 5px rgb(0, 91, 91);
+  box-shadow: 10px 10px 10px rgb(0, 91, 91);
 }
 .contentBoxes:hover{
   z-index: 2;
